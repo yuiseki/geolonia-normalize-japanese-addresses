@@ -22,7 +22,8 @@
     "test:addresses": "tsx ./test/run.ts addresses",
     "test:generate-test-data": "tsx test/addresses/build-test-data.ts > test/addresses/addresses.csv",
     "test:integration": "tsx ./test/run.ts integration",
-    "lint": "eslint \"src/**/*.ts\" \"test/**/*.test.ts\" --fix",
+    "lint": "eslint \"src/**/*.ts\" \"test/**/*.test.ts\"",
+    "lint:fix": "eslint \"src/**/*.ts\" \"test/**/*.test.ts\" --fix",
     "build": "npm run clean && rollup -c rollup.config.js && shx cp ./dist/main-esm.mjs* ./demo/",
     "clean": "shx rm -rf dist"
   },
